@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>MENTAL HEALTH TRACKER</h2>
+        <ul class="nav-links">
+            <li><a href="/self_care">Home</a></li>
+            <li><a href="/counselors">Counselors</a></li>
+            <li><a href="/booking">Book a Session</a></li>
+            <li><a href="/progress">Progress Report</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Booking Form -->
+    <div class="main-container">
+        <div class="content-container">
+            <h1 class="app-title">Book a Therapy Session</h1>
+            <form id="booking-form" class="form">
+                <!-- Counselor Selection -->
+                <div class="form-group">
+                    <label for="counselor-select" class="form-label">Select Counselor:</label>
+                    <select id="counselor-select" class="input" required>
+                        <option value="" disabled selected>Choose a Counselor</option>
+                        <option value="Dr. John Doe">Dr. John Doe</option>
+                        <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+                    </select>
+                </div>
+                <!-- Date Selection -->
+                <div class="form-group">
+                    <label for="date-select" class="form-label">Select Date:</label>
+                    <input type="date" id="date-select" class="input" required>
+                </div>
+                <!-- Time Selection -->
+                <div class="form-group">
+                    <label for="time-select" class="form-label">Select Time:</label>
+                    <input type="time" id="time-select" class="input" required>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Book Session</button>
+            </form>
+            <!-- Success Message -->
+            <div id="booking-success" class="hidden success-message">
+                Booking confirmed! Your session with <span id="counselor-name"></span> is scheduled for 
+                <span id="session-date"></span> at <span id="session-time"></span>.
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

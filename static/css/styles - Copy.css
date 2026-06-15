@@ -1,0 +1,257 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Containers */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e9ecef;
+}
+
+.form-container, .content-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Titles */
+.app-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Forms */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #6c757d;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Tips List */
+.tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.tips-list li {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* Mood Page Specific */
+#journal-form {
+    margin-top: 20px;
+}
+
+#journal-entry {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#mood-chart {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mood-Specific Background Colors */
+body.happy {
+    background-color: #FFEB3B;
+}
+
+body.sad {
+    background-color: #80C3D5;
+}
+
+body.anxious {
+    background-color: #B19CD9;
+}
+
+body.neutral {
+    background-color: #F5F5DC;
+}
+
+.toggle-text a:hover {
+    text-decoration: underline;
+}
+.hidden {
+    display: none;
+}
+
+.toggle-text {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.toggle-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.toggle-text a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+}
+.chart-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.summary-container {
+    margin-top: 20px;
+}
+
+#progress-chart {
+    max-width: 100%;
+    height: auto;
+}
+
+#progress-summary {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.hidden {
+    display: none;
+}
+
+#booking-success {
+    font-size: 1.1rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
